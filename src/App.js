@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.scss';
-import Navbar from './component/navbar.js'
+
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
          	this.props.children
          }
 
-        <Navbar />
+        
       </div>
     );
   }
