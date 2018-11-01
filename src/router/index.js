@@ -30,6 +30,7 @@ const router = (
               <Route path="/home/jiaju" component={Jiaju}/>
               <Route path="/home/jiajuyongpin" component={Jiajuyongpin}/>
               <Route path="/home/huodong" component={Huodong}/>
+              <Redirect from="/home" to="/home/tuijian"/>
             </Switch>
           </Home>
         }/>
