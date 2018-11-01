@@ -8,4 +8,5 @@ module.exports = function(app) {
           host: 'm.wowdsgn.com',
           changeOrigin:true
   }));
+  
 };

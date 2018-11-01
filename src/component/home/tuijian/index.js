@@ -1,9 +1,17 @@
 import React ,{Component} from "react";
 
+import Banner from './banner.js'
+import List from './list.js'
+
 class Tuijian extends Component{
+  
   render(){
     return(
-      <h2>home/Tuijian</h2>
+      <div>
+        <Banner/>
+        <List />
+
+      </div>
     )
   }   
    

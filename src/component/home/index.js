@@ -4,9 +4,8 @@ import  {NavLink} from "react-router-dom";
 
 import Downapp from './downapp.js'
 import Navbar from '../navbar.js'
+
 import './index.scss'
-
-
 
 
 class Home extends Component{

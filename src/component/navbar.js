@@ -2,6 +2,7 @@ import React ,{Component} from "react";
 import  {NavLink} from "react-router-dom";
 
 import './navbar.scss'
+import '../iconfont/iconfont.css'
 
 class Genre extends Component{
   render(){
