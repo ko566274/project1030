@@ -1,11 +1,17 @@
-import {creatStore} from "redux";
+import {createStore} from "redux";
 
-var reducer = combinReducers({
+var reducer=(prevState,action)=>{
+
+    var type=action.type;
+    switch(type){
+        case "changetitle":
+            return action.payload
+        default:
+            return "商品"
+    }
     
-})
+}
 
-
-const store = creatStore(reducer);
-
+const store = createStore(reducer);
 
 export default store;
