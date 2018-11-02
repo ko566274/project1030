@@ -4,14 +4,20 @@ import { BrowserRouter as Router, Route,Redirect, Switch } from "react-router-do
 import App from '../App';
 import Home from '../component/home';
 import Genre from '../component/genre';
+import Product from '../component/product';
 import Shopcard from '../component/shopcard';
 import Msn from '../component/msn';
 import My from '../component/my';
+import Detail from '../component/detail';
 // home二级页面
 import Tuijian from '../component/home/tuijian';
 import Jiaju from '../component/home/jiaju';
 import Jiajuyongpin from '../component/home/jiajuyongpin';
 import Huodong from '../component/home/huodong';
+import NewProduct from '../component/product/newProduct';
+import NewPrice from '../component/product/newPrice';
+import Selling from '../component/product/selling';
+
 
 
 const router = (
@@ -25,16 +31,31 @@ const router = (
               <Route path="/home/jiaju" component={Jiaju}/>
               <Route path="/home/jiajuyongpin" component={Jiajuyongpin}/>
               <Route path="/home/huodong" component={Huodong}/>
+              <Redirect from="/home" to="/home/tuijian"/>
             </Switch>
           </Home>
+        }/>
+        <Route path="/product/:KGid" component={Product}/>
+        <Route path="/product" render={()=>
+          <Product>
+            <Switch>
+            <Route path="/product/newProduct" component={NewProduct}/>
+            <Route path="/product/selling" component={Selling}/>
+            <Route path="/product/newPrice" component={NewPrice}/>
+            </Switch>
+          </Product>
         }/>
           
         <Route path="/genre" component={Genre}/>
         <Route path="/shopcard" component={Shopcard}/>
         <Route path="/msn" component={Msn}/>
         <Route path="/my" component={My}/>
+
         
         <Redirect from='*' to='/home/tuijian' />
+
+        <Route path="/detail/:AIid" component={Detail}/>
+
       </Switch>
     </App>
   </Router>

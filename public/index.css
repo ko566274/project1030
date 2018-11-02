@@ -1,1 +1,14 @@
+<<<<<<< HEAD
+=======
+html{
+  font-size:26.6666666667vw;
+}
+body{
+  font-size:14px;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,img,input,ul,li,ol,dl,dt,dd,figure,figcaption{ padding:0; margin:0;}
+ul,ol,li{ list-style:none;}
+img{ display:block; border:0;}
+input{ outline:none}
+>>>>>>> 7f30e00adb632402054086a1dd3a50e57a1ee630
 

@@ -1,0 +1,24 @@
+{
+          this.state.infolist.map(item=>
+            <li className="info" key={item.moduleId}>
+              <h3>{item.moduleName}</h3>
+              <p>{item.moduleDescription}</p>
+              <img src={item.moduleContent.banners[0].bannerImgSrc}/>
+              {/* <ul className="min">
+                {this.state.infolist.moduleContent.products.map(item=>
+                  <li className="min_info" key={item.productId}>
+                    <img classname="min_img" src={item.productImg}/>
+                    <h3 className="min_title">{item.productTitle}</h3>
+                    <div className="min_price">
+                      <p className="sellPrice">￥{item.sellPrice}</p>
+                      <span className="originalPrice">￥{item.originalPrice}</span>
+                    </div>
+                    
+                  </li>
+                )
+                }
+                
+              </ul> */}
+            </li>
+          )
+        }

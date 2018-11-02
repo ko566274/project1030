@@ -10,3 +10,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html{
+  font-size:26.6666666667vw;
+}
+body{
+  font-size:14px;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,img,input,ul,li,ol,dl,dt,dd,figure,figcaption{ padding:0; margin:0;}
+ul,ol,li{ list-style:none;}
+img{ display:block; border:0;}
+input{ outline:none}
+
+body{ font-size:16px; font-family:"微软雅黑"; color:#272822;}
+
+a{ text-decoration:none;}
+
+header,footer,nav,section,aside,article,main,figure,figcaption{ display:block;}
+
+*{ box-sizing:border-box;}
+
+html,body{ height:100%;}
