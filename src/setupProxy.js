@@ -11,8 +11,13 @@ module.exports = function(app) {
   app.use(proxy('/pages', {
   target: 'https://m.wowdsgn.com',
   host: 'm.wowdsgn.com',
- changeOrigin:true
+  changeOrigin:true
 }));
+app.use(proxy('/itemdetail', {
+        target: 'https://m.wowdsgn.com',
+        host: 'm.wowdsgn.com',
+        changeOrigin:true
+}))
 }
 
 

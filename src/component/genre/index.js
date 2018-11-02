@@ -25,13 +25,17 @@ class Genre extends Component{
           </li>)}
         </ul>
        <div class="image2" style={{backgroundImage:'url('+ this.state.image2 +')'}}></div>
-       <ul>{this.state.list2.map(item=><li key={item.bannerLinkTargetId} onClick={this.handleTClick.bind(this,item.bannerLinkTargetId)}>{item.bannerTitle}<span>></span></li>)}</ul>
+       <ul>{this.state.list2.map((item,index)=>
+          <li key={item.bannerLinkTargetId} onClick={this.handle2TClick.bind(this,item.bannerLinkTargetId,index)}>
+              {item.bannerTitle}<span>></span>
+          </li>)}
+        </ul>
       </div>
     )
   }
 
   handleClick(id,index){
-
+    
     this.props.history.push("/product/"+id) 
     
     store.dispatch({
@@ -39,15 +43,20 @@ class Genre extends Component{
       payload:this.state.list[index]
   })
   }
-  handleTClick(id){
+  handle2TClick(id,index){
     // console.log(this.props.history)
    this.props.history.push("/product/"+id) 
+
+   store.dispatch({
+    type:"changetitle",
+    payload:this.state.list2[index]
+  })
   }
 
   componentDidMount(){
     axios.get("/v2/page?pageId=5&tabId=1&_=1540897417681").then(res=>{
       // console.log(res);
-      console.log(res.data.data.modules[0].moduleContent.banners);
+      // console.log(res.data.data.modules[0].moduleContent.banners);
       this.setState({
         list:res.data.data.modules[0].moduleContent.banners,
         list2:res.data.data.modules[1].moduleContent.banners,

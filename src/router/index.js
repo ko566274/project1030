@@ -8,6 +8,7 @@ import Product from '../component/product';
 import Shopcard from '../component/shopcard';
 import Msn from '../component/msn';
 import My from '../component/my';
+import Detail from '../component/detail';
 // home二级页面
 import Tuijian from '../component/home/tuijian';
 import Jiaju from '../component/home/jiaju';
@@ -49,7 +50,7 @@ const router = (
         <Route path="/shopcard" component={Shopcard}/>
         <Route path="/msn" component={Msn}/>
         <Route path="/my" component={My}/>
-        
+        <Route path="/detail/:AIid" component={Detail}/>
         <Redirect from='*' to='/home' />
       </Switch>
     </App>
