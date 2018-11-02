@@ -1,0 +1,20 @@
+#home{
+	width: 100%;
+	height: .4rem;	
+	.homeul{
+		display: flex;
+		.homeli{
+			flex:1;
+			text-align: center;	
+			line-height: .4rem;			
+			a{
+				display:inline-block;
+			}
+
+		}
+	}
+}
+.active{
+	border-bottom: 3px solid #000;
+	color:#000;
+}

@@ -1,12 +1,11 @@
 import React ,{Component} from "react";
-
-class Genre extends Component{
+class Navbar extends Component{
   render(){
     return(
-      <h2>navbar</h2>
+      <input type="text" placeholder="搜索我的尖叫好物"/>
     )
   }   
    
 }
 
-export default Genre;
+export default Navbar;

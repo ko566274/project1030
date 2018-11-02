@@ -34,7 +34,7 @@ const router = (
         <Route path="/msn" component={Msn}/>
         <Route path="/my" component={My}/>
         
-        <Redirect from='*' to='/home' />
+        <Redirect from='*' to='/home/tuijian' />
       </Switch>
     </App>
   </Router>
