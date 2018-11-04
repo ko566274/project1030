@@ -49,4 +49,4 @@ class Genre extends Component{
    
 }
 
-export default Genre;
+export default Navbar;

@@ -11,12 +11,3 @@ ul,ol,li{ list-style:none;}
 img{ display:block; border:0;}
 input{ outline:none}
 
-body{ font-size:16px; font-family:"微软雅黑"; color:#272822;}
-
-a{ text-decoration:none;}
-
-header,footer,nav,section,aside,article,main,figure,figcaption{ display:block;}
-
-*{ box-sizing:border-box;}
-
-html,body{ height:100%;}
