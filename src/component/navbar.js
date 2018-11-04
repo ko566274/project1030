@@ -4,7 +4,7 @@ import  {NavLink} from "react-router-dom";
 import './navbar.scss'
 import '../iconfont/iconfont.css'
 
-class Genre extends Component{
+class Navbar extends Component{
   render(){
     return(
       <div>
