@@ -1,0 +1,92 @@
+.mar{
+  margin-bottom:0.15rem ;
+}
+.self{
+  img{
+    width: 100%;
+  }
+  margin-bottom:0.15rem ;
+}
+.newlist{
+  width: 100%;
+  margin-bottom: 0.15rem;
+  img{
+    width: 100%;
+  }
+}
+.pagemodule {
+  background-color: #fff;
+  margin-bottom: 0.15rem;
+  .reqi {
+    padding: 0.13rem 0rem 0rem;
+    border: none;
+
+    h1 {
+      font-weight: bold;
+      font-size: 0.18rem;
+      color: #333;
+      margin: 0.15rem 0;
+      text-align: center;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+.footh{
+  height: 0.45rem;
+  width: 100%;
+}
+
+.wai{
+  border-top: 1px solid #F5F5F5;
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+
+  .productList{
+    float: left;
+    width: 50%;
+    height: 2.95rem;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    a{
+
+      width: 100%;
+      position: relative;
+      height: 2.45rem;
+      img{
+        width: 1.865rem;
+        box-sizing: border-box;
+      }
+      .price{
+        padding: 0rem 0.16rem;
+        position: relative;
+        margin-top: 0.1rem;
+        font-size: 0;
+        p{
+          padding-top: 0.05rem;
+          color: #808080;
+          font-size: 0.14rem;
+          box-sizing: border-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .sell{
+          font-size: 0.16rem;
+          margin-right: 0.05rem;
+
+        }
+        .orPrice{
+          font-size: 0.12rem;
+          color: #ccc;
+          text-decoration: line-through;
+
+        }
+      }
+    }
+  }
+.productList:nth-child(2n) {
+  border-right: none;
+}
+}
