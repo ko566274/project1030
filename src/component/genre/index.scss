@@ -1,0 +1,43 @@
+
+input{
+    outline: none;
+}
+#fenlei{
+    margin: 0.1rem 0.15rem;
+}
+
+#fenlei .image1,.image2{
+    height: 1.15rem;
+    width: 3.45rem;
+    background-size:100%;   
+}
+#fenlei .topInput{
+    width:2.5rem;
+    height:0.25rem;
+    text-indent: 0.3rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border:none;
+    margin-bottom: 0.15rem;
+    background: #f5f5f5;
+    background-image: url(../../static/images/12345666.png);
+    background-size:10%;
+    background-repeat: no-repeat;
+}
+#fenlei ul{
+    height: 3.7rem;
+
+    
+}
+#fenlei ul li{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding-left: 0.1rem;
+    border-bottom: 1px solid #eaeaea;  
+}
+#fenlei ul span{
+    padding-right:0.1rem;
+    float: right;
+    font-size: 0.25rem;
+    color:#ccc;
+}
