@@ -1,16 +1,10 @@
 import React ,{Component} from "react";
-<<<<<<< HEAD
-class Navbar extends Component{
-  render(){
-    return(
-      <input type="text" placeholder="搜索我的尖叫好物"/>
-=======
 import  {NavLink} from "react-router-dom";
 
 import './navbar.scss'
 import '../iconfont/iconfont.css'
 
-class Genre extends Component{
+class Navbar extends Component{
   render(){
     return(
       <div>
@@ -50,7 +44,6 @@ class Genre extends Component{
 
 
       </div>
->>>>>>> 7f30e00adb632402054086a1dd3a50e57a1ee630
     )
   }   
    

@@ -1,9 +1,9 @@
 import React ,{Component} from "react";
-
+import Log from "../log"
 class Shopcard extends Component{
   render(){
     return(
-      <h2>购物车</h2>
+      <Log></Log>
     )
       
 

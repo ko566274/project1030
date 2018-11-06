@@ -1,9 +1,9 @@
 import React ,{Component} from "react";
-
+import Log from "../log"
 class Genre extends Component{
   render(){
     return(
-      <h2>消息</h2>
+      <Log></Log>
     )
   }   
    
